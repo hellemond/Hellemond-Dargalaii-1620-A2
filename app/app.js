@@ -1,10 +1,12 @@
-const budgetCards = {title : '', item1 : '', item2 : '', total : ''}
 
 
 
-const switchPage = document.querySelector('.btn')
-switchPage.addEventListener('click', (ev)=>{
-    console.log('hello')
+viewAllBudgetsButton = document.querySelector('.btn2')
+viewAllBudgetsButton.style.display = 'none'
+
+createBudgetButton = document.querySelector('.btn1')
+createBudgetButton.addEventListener('click', ()=>{
+    cards = document.querySelector('.budget-cards').style.display = 'none'
+    createBudgetButton.style.display = 'none'
+    viewAllBudgetsButton.style.removeProperty("display");
 })
-
-
