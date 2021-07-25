@@ -1,11 +1,13 @@
 body{
     margin: 0;
     display: grid;
-    grid-template-columns: 10% auto 10%;
-    grid-template-rows: 90px 10% auto;
+    grid-template-columns: 13% auto 10%;
+    grid-template-rows: 90px 100px auto 100px;
     grid-template-areas: 
                 'hd hd hd'
-                'left mid right';
+                'left top right'
+                'left mid right'
+                'left bot right';
 }
 
 
@@ -35,13 +37,17 @@ body{
 
 .btn{
     padding-top: 30px;
-    grid-area: mid;
+    grid-area: top;
 }
 
 .create-budget{
-    display: flex;
     border-radius: 10px;
     font-size: 20px;
     
+}
+
+.budget-cards{
+    display: flex;
+    grid-area: mid;
 }
 
