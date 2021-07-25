@@ -30,7 +30,7 @@ body{
     float: right;
 }
 
-.header a.logo {
+.header a.app-title {
   font-size: 25px;
   font-weight: bold;
 }
@@ -40,7 +40,7 @@ body{
     grid-area: top;
 }
 
-.create-budget{
+.swap-page{
     border-radius: 10px;
     font-size: 20px;
     
