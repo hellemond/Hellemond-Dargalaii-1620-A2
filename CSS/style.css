@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 13% auto 10%;
+    grid-template-rows: 90px 100px auto 100px;
+    grid-template-areas: 
+                'hd hd hd'
+                'left top right'
+                'left mid right'
+                'left bot right';
+}
+
+
+.header a {
+    float: left;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px; 
+}
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    grid-area: hd;
+}
+
+.header-right {
+    float: right;
+}
+
+.header a.app-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+label{
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+input{
+    max-width: 320px;
+}
+
+.get-card-info{
+    grid-area: mid;
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+}
+
+.create-button{
+    padding-top: 30px;
+    grid-area: top;
+}
+
+.create-budget{
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+.return-button{
+    padding-top: 30px;
+    grid-area: top;
+}
+.see-all-budgets{
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+
+.budget-cards{
+    display: flex;
+    grid-area: mid;
+}
+
